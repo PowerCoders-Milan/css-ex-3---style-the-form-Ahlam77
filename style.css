@@ -5,7 +5,6 @@ body{
   margin: 0 auto;
 
 }
-
 #profile{
     border-top: 10px solid black;
     border-top-width: 10px;
@@ -13,152 +12,84 @@ body{
 
 }
 
-hr{
-border-top: 2px solid black;
+.form-style{
+	max-width: 500px;
+	padding: 20px 12px 10px 20px;
+	font: 13px Arial, Helvetica, sans-serif;
 }
-input{
-    border-left: white ;
-    border-right: white;
-    border-top: white;
+.form-style-heading{
+	font-weight: bold;
+	font-style: italic;
+	border-bottom: 2px solid #ddd;
+	margin-bottom: 20px;
+	font-size: 15px;
+	padding-bottom: 3px;
 }
-#title1{
-
-    margin-left: 41%;
-    
+.form-style label{
+	display: block;
+	margin: 0px 0px 15px 0px;
 }
-
-#Vorname{
-    margin-left: 37.8%;
-    
-   
+.form-style label > span{
+	width: 100px;
+	font-weight: bold;
+	float: left;
+	padding-top: 8px;
+	padding-right: 5px;
 }
-#Nachname{
-    margin-left: 36.8%;
-    border-left: white ;
-    border-right: white;
-    border-top: white;
+.form-style span.required{
+	color:rgb(182, 23, 23);
 }
-#gender1{
- margin-left: 36.8%;
- border-left: white ;
-    border-right: white;
-    border-top: white;
-    width: 80px;
-    height: 30px;
- 
+.form-style .tel-number-field{
+	width: 40px;
+	text-align: center;
 }
-#gender1:hover{
-    border-bottom-color: red;
-
+.form-style input.input-field, .form-style-2 .select-field{
+	width: 48%;	
 }
-#gender1:active{
-    border-bottom:red;
+.form-style .input.input-field, 
+.form-style .tel-number-field, 
+.form-style .textarea-field, 
+ .form-style .select-field{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border: 1px solid #C2C2C2;
+	box-shadow: 1px 1px 4px #EBEBEB;
+	-moz-box-shadow: 1px 1px 4px #EBEBEB;
+	-webkit-box-shadow: 1px 1px 4px #EBEBEB;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	padding: 7px;
+	outline: none;
 }
-#gender2{
-    margin-right: 30%;
-    border-left: white ;
-    border-right: white;
-    border-top: white;
-    width: 80px;
-    height: 30px;
-   }
-   #gender2:hover{
-    border-bottom-color: red;
-   }
-   #gender2:active{
-    border-bottom:red;
-   }
-#IT{
-    margin-left: 38.3%;
-    width: 52px;
-    height: 30px;
+.form-style .input-field:focus, 
+.form-style .tel-number-field:focus, 
+.form-style .textarea-field:focus,  
+.form-style .select-field:focus{
+	border: 1px solid;
 }
-#DE{
-    width: 52px;
-    height: 30px;
-
+.form-style .textarea-field{
+	height:100px;
+	width: 55%;
 }
-#FR{
-    width: 52px;
-    height: 30px;
+.form-style input[type=submit],
+.form-style input[type=button]{
+	border: none;
+	padding: 8px 15px 8px 15px;
+	background: #e70826;
+	color: #fff;
+	box-shadow: 1px 1px 4px #DADADA;
+	-moz-box-shadow: 1px 1px 4px #DADADA;
+	-webkit-box-shadow: 1px 1px 4px #DADADA;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
 }
-#Telefon{
-margin-left: 38.5%;
-
+.form-style input[type=submit]:hover,
+.form-style input[type=button]:hover{
+    margin-right: auto;
+	background: #9a0707;
+	color: #fff;
 }
-#Mobile{
- margin-left: 38.5%;
- 
-}
-#Hauptnummer{
- margin-left: 33.5%;
- 
-}
-#fax{
-    margin-left: 41%;
-    
-}
-#Mail{
-margin-left: 39.5%;
-
-}
-#Mail2{
-    margin-left: 39.5%;
-    
-}
-#Frima{
-   margin-left: 39.7%;
-   
-}
-#Frima2{
-   margin-left: 35%;
-   
-}
-
-#Homepage{
-   margin-left: 36%;
-   
-}
-#add{
-    margin-left: 31.5%;
-    
-}
-#zusa{
-    margin-left: 33.5%;
-    
-border-style: bottom;
-}
-#Postfach{
-    margin-left: 38.7%;
-    
-}
-#pl{
-    margin-left: 38.7%;
-    
-
-}
-#lanz1{
-    
-    width: 5%;
-
-}
-#lanz2{
-    margin-left: 1%;
-}
-#adre{
-    margin-left: 36.9%;
-    
-}
-#address_1{
-    margin-left: 1%;
-}
-#address_2{
-
-    margin-left: 1%;
-}
-#spe{
-    margin-left: 70%;
-    background-color: red;
-    color: white;
-    padding: 15px;
- }
+</style>

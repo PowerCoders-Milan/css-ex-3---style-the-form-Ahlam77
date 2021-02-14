@@ -1,6 +1,3 @@
-<!--  Style this form accrding to the image.
-      Extra points: Create your own style in
-      yourstyle.html  -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,125 +7,55 @@
       <link rel="stylesheet" type="text/css" href="style.css">
       <title>Exersice form</title>
 </head>
+<header>
+      <hr id="profile">
+</header>
 
 <body>
-      <header>
-            <hr id="profile">
+
+      <div class="form-style">
             <h1>Profil</h1>
-            <br>
-            <h3>Hier Konnen Sie Ihre</h3>
-            <br>
-            <hr>
-      </header>
-      <form>
-            <div>
-                  <h2>Personliche Daten</h2>
-                  <label for="titel">Titel</label>
-                  <input id="title1" type="text" placeholder="Dr.hc" required>
-                  <br>
-                  <br>
-                  <label for="Vorname">Vorname</label>
-                  <input id="Vorname" type="text" placeholder="Peter" required>
-                  <br>
-                  <br>
-                  <label for="Nachname">Nachname</label>
-                  <input id="Nachname" type="text" placeholder="Muster" required>
-                  <br>
-                  <br>
-                  <section>
+            <h2>Hier Konnen Sie Ihre</h2>
+            <h3>Personliche Daten</h3>
+            <div class="form-style-heading"></div>
+            <label for="field1"><span>Titel <span class="required">*</span></span><input type="text" class="input-field"
+                        placeholder="Dr.hc" name="field1" value="" /></label>
+            <label for="field2"><span>Vorname <span class="required">*</span></span><input type="text"
+                        class="input-field" placeholder="Peter" name="field2" value="" /></label>
+            <label for="field3"><span>Nachname <span class="required">*</span></span><input type="text"
+                        class="input-field" placeholder="Muster" name="field3" value="" /></label>
 
-                        <label for="Geschlecht">Geschlecht</label>
-                        <input id="gender1" type="button" placeholder="M" value="M" required>
-                        <input id="gender2" type="button" placeholder="W" value="W">
-                  </section>
-                  <br>
-                  <section>
-                        <span>Sprache</span>
-                        <input type="button" name="Language" id="IT" value="IT" required>
-                        <label for="IT"></label>
-                        <input type="button" name="Language" id="DE" value="DE">
-                        <label for="DE"></label>
-                        <input type="button" name="Language" id="FR" value="RF">
-                        <label for="FR"></label>
-                  </section>
-            </div>
+            <label><span>Geschlecht</span><input type="button" class="tel-number-field" name="M" value="M"
+                        maxlength="4" /><input type="text" class="tel-number-field" name="W" value="W" maxlength="4" />
+            </label>
             <hr>
-            <div>
-                  <h1>Kontaktdaten</h1>
-                  <br>
-                  <label for="Telefon">Telefon</label>
-                  <input id="Telefon" type="number" placeholder="" required>
-                  <br>
-                  <br>
-                  <label for="Mobile">Mobile</label>
-                  <input id="Mobile" type="number" placeholder="Optional">
-                  <br>
-                  <br>
-                  <label for="hau">Hauptnummer</label>
-                  <input id="Hauptnummer" type="number" placeholder="Optional">
-                  <br>
-                  <br>
-                  <label for="Fax">Fax</label>
-                  <input id="fax" type="number" placeholder="Optional">
-                  <br>
-                  <br>
-                  <label for="Mail">Mail1</label>
-                  <input id="Mail" type="email" placeholder="" required>
-                  <br>
-                  <br>
-                  <label for="Mail2">Mail2</label>
-                  <input id="Mail2" type="email" placeholder="Optional">
-                  <br>
-                  <br>
+            <h3>Kontaktdaten</h3>
+
+            <label><span>Sprache</span><input type="button" class="tel-number-field" name="IT" value="IT"
+                        maxlength="4" /><input type="text" class="tel-number-field" name="DE" value="DE"
+                        maxlength="4" /><input type="text" class="tel-number-field" name="FR" value="FR"
+                        maxlength="4" /><br>
+
+                  <br><label><span>Telephone</span><input type="text" class="tel-number-field" name="tel_no_1" value=""
+                              maxlength="4" /><input type="text" class="tel-number-field" name="tel_no_2" value=""
+                              maxlength="4" />
+                  </label>
+                  <label for="field4"><span>Hauptnummer <span class="Optional"></span></span><input type="text"
+                              class="input-field" placeholder="Optional" name="field4" value="" /></label>
+
+                  <label for="field5"><span>Frima <span class="X"></span></span><input type="text" class="input-field"
+                              placeholder="Optional" name="field5" value="" /></label><br>
                   <hr>
-            </div>
 
-            <div>
-                  <h1>Adressdaten</h1>
-                  <br>
-                  <label for="Frima">Frima</label>
-                  <input id="Frima" type="text" placeholder="" required>
-                  <br>
-                  <br>
-                  <label for="Frima2">zusatz firma</label>
-                  <input id="Frima2" type="text" placeholder="Optional">
-                  <br>
-                  <br>
-                  <label for="Homepage">Homepage</label>
-                  <input id="Homepage" type="text" placeholder="Optional">
-                  <br>
-                  <br>
+                  <h3>Adressdaten</h3>
+                  <label for="field6"><span>zusatz firma <span class="Optional"></span></span><input type="text"
+                              class="input-field" placeholder="Optional" name="field6" value="" /></label>
+                  <label for="field6"><span>Homepage <span class="Optional"></span></span><input type="text"
+                              class="input-field" placeholder="Optional" name="field7" value="" /></label>
 
-                  <label for="Adresse">Adresse/Haus Nr</label>
-                  <span id="add">
-                        <input id="address_1" type="text" placeholder="Musterstrasse">
-                        <input id="lanz1" type="number" placeholder="33">
-                  </span>
-                  <br>
-                  <br>
-                  <label for="zusa">Zusatz Adresse</label>
-                  <input id="zusa" type="text" placeholder="Optional">
-                  <br>
-                  <br>
-                  <label for="Postfach">Postfach</label>
-                  <input id="Postfach" type="text" placeholder="Optional">
-                  <br>
-                  <br>
-                  <label for="plz">PLZ/Ort</label>
-                  <span id="pl">
-                        <input id="lanz1" type="number" placeholder="8800">
-                        <input id="lanz2" type="text" placeholder="Musterstadt">
-                  </span>
-                  <br>
-                  <br>
-                  <label for="Adresse">Kanton/Land</label>
-                  <span id="adre">
-                        <input id="lanz1" type="text" placeholder="ZH">
-                        <input id="address_2" type="text" placeholder="Schweiz">
-                  </span>
-                  <br>
-                  <br>
-                  <input id="spe" type="submit" value="Speichern">
-            </div>
-      </form>
+                  <label><span> </span><input type="submit" value="Submit" /></label>
+                  </form>
+      </div>
 </body>
+
+</html>
