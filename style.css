@@ -1,79 +1,160 @@
 /* Use Selectors and attributes for the HTML design */
-#pro{
-    border-top: 10px solid black;
-    border-top-width: ;
-    margin-right: 90%;
-
-    
+body{
+    width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
 
 }
+
+#profile{
+    border-top: 10px solid black;
+    border-top-width: 10px;
+    margin-right: 90%;
+
+}
+
 hr{
 border-top: 2px solid black;
+}
+input{
+    border-left: white ;
+    border-right: white;
+    border-top: white;
 }
 #title1{
 
     margin-left: 40%;
+    
 }
+
 #Vorname{
     margin-left: 37.8%;
+    
    
 }
 #Nachname{
     margin-left: 36.8%;
+    border-left: white ;
+    border-right: white;
+    border-top: white;
 }
-#Man{
- margin-left: 37%;
+#gender1{
+ margin-left: 36.8%;
+ border-left: white ;
+    border-right: white;
+    border-top: white;
+    width: 80px;
+    height: 30px;
  
 }
-#Woman{
-    margin-left: 3%;
+#gender1:hover{
+    border-bottom-color: red;
+
+}
+#gender1:active{
+    border-bottom:red;
+}
+#gender2{
+    margin-right: 30%;
+    border-left: white ;
+    border-right: white;
+    border-top: white;
+    width: 80px;
+    height: 30px;
+   }
+   #gender2:hover{
+    border-bottom-color: red;
+   }
+   #gender2:active{
+    border-bottom:red;
    }
 #IT{
     margin-left: 38.3%;
+    width: 52px;
+    height: 30px;
+}
+#DE{
+    width: 52px;
+    height: 30px;
+
+}
+#FR{
+    width: 52px;
+    height: 30px;
 }
 #Telefon{
 margin-left: 38.5%;
+
 }
 #Mobile{
  margin-left: 38.5%;
+ 
 }
-#hau{
+#Hauptnummer{
  margin-left: 35.5%;
+ 
 }
 #fax{
     margin-left: 41%;
+    
 }
 #Mail{
 margin-left: 40%;
+
 }
 #Mail2{
     margin-left: 40%;
+    
 }
 #Frima{
-   margin-left: 39.7%; 
+   margin-left: 39.7%;
+   
 }
 #Frima2{
    margin-left: 37%;
+   
 }
 
 #Homepage{
    margin-left: 37.5%;
+   
 }
 #add{
     margin-left: 35%;
+    
 }
 #zusa{
     margin-left: 36%;
+    
 border-style: bottom;
 }
 #Postfach{
     margin-left: 38.7%;
+    
 }
 #pl{
     margin-left: 38.7%;
+    
+
+}
+#lanz1{
+    
+    width: 3%;
+
+}
+#lanz2{
+    
 }
 #adre{
     margin-left: 36.9%;
+    
+}
+#address_1{
+    
+}
+#address_2{
+
+    
 }
 #spe{
     margin-left: 70%;
