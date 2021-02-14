@@ -1,119 +1,135 @@
 <!--  Style this form accrding to the image.
       Extra points: Create your own style in
       yourstyle.html  -->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <title>exersice form</title>
 </head>
 
 <body>
       <header>
-            <h1>Profile</h1>
+            <hr id="pro">
+            <h1>profil</h1>
+            <br>
+            <h3>Hier Konnen Sie Ihre</h3>
+            <br>
+            <hr>
       </header>
-
-      <h3>personal data</h3>
-      <div class="title">
-
-            Title : <input type="text" name="name" id="tit" required>
-      </div>
-      <div class="fname">
-            First name : <input type="text" name="fname" id="fna" required><br>
-      </div>
-      <div class="sname">
-            Surname : <input type="text" name="sname" id="sna" required>
-      </div>
-      <p>Gender: </p>
-      <div data-role="fieldcontain">
+      <form>
             <div>
-                  <input type="radio" name="radio-choice-1" id="radio-choice-1" contenteditable>
-                  <label for="radio-choice-1">Male</label>
+                  <h2>personliche Daten</h2>
+                  <label for="titel">Titel</label>
+                  <input id="title1" type="text" placeholder="Dr.hc" required>
+                  <br>
+                  <br>
+                  <label for="Vorname">Vorname</label>
+                  <input id="Vorname" type="text" placeholder="Peter" required>
+                  <br>
+                  <br>
+                  <label for="Nachname">Nachname</label>
+                  <input id="Nachname" type="text" placeholder="Muster" required>
+                  <br>
+                  <br>
+                  <section>
+                        <span>Geschlecht</span>
+                        <input type="radio" name="G" id="Man" value="yes" required>
+                        <label for="Man">M</label>
+                        <input type="radio" name="G" id="Woman" value="yes">
+                        <label for="Woman">W</label>
+                  </section>
+                  <br>
+                  <section>
+                        <span>Sprache</span>
+                        <input type="radio" name="Language" id="IT" value="yes" required>
+                        <label for="IT">IT</label>
+                        <input type="radio" name="Language" id="DE" value="yes">
+                        <label for="DE">DE</label>
+                        <input type="radio" name="Language" id="FR" value="yes">
+                        <label for="FR">FR</label>
+                  </section>
             </div>
+            <hr>
             <div>
-                  <input type="radio" name="radio-choice-2" id="radio-choice-2" contenteditable>
-
-                  <label for="radio-choice-2">Female</label>
+                  <h1>kontaktdaten</h1>
+                  <br>
+                  <label for="Telefon">Telefon</label>
+                  <input id="Telefon" type="number" placeholder="" required>
+                  <br>
+                  <br>
+                  <label for="Mobile">Mobile</label>
+                  <input id="Mobile" type="number" placeholder="Optional">
+                  <br>
+                  <br>
+                  <label for="hau">Hauptnummer</label>
+                  <input id="hau" type="number" placeholder="Optional">
+                  <br>
+                  <br>
+                  <label for="Fax">Fax</label>
+                  <input id="fax" type="number" placeholder="Optional">
+                  <br>
+                  <br>
+                  <label for="Mail">Mail1</label>
+                  <input id="Mail" type="email" placeholder="" required>
+                  <br>
+                  <br>
+                  <label for="Mail2">Mail2</label>
+                  <input id="Mail2" type="email" placeholder="Optional">
+                  <br>
+                  <br>
+                  <hr>
             </div>
 
-      </div>
+            <div>
+                  <h1>Adressdaten</h1>
+                  <br>
+                  <label for="Frima">Frima</label>
+                  <input id="Frima" type="text" placeholder="" required>
+                  <br>
+                  <br>
+                  <label for="Frima2">zusatz firma</label>
+                  <input id="Frima2" type="text" placeholder="Optional">
+                  <br>
+                  <br>
+                  <label for="Homepage">Homepage</label>
+                  <input id="Homepage" type="text" placeholder="Optional">
+                  <br>
+                  <br>
 
-      <div>
-            <label for="language"> choose a language </label>
-            <select name="language" id="language">
-                  <option value=""> choose a language </option>
-                  <option value="English"> English</option>
-                  <option value="France">France</option>
-                  <option value="Italia">Italia</option>
-            </select>
-      </div>
-
-      <hr>
-      <div class="con">
-            <h3>contact details</h3>
-            <div class="telephone">
-                  <label class="telephone">telephone</label>
-                  <input type="number" name="telephone" id="numb">
+                  <label for="Adresse">Adresse/Haus Nr</label>
+                  <span id="add">
+                        <input id="" type="text" placeholder="Musterstrasse">
+                        <input id="" type="number" placeholder="33">
+                  </span>
+                  <br>
+                  <br>
+                  <label for="zusa">Zusatz Adresse</label>
+                  <input id="zusa" type="text" placeholder="Optional">
+                  <br>
+                  <br>
+                  <label for="Postfach">Postfach</label>
+                  <input id="Postfach" type="text" placeholder="Optional">
+                  <br>
+                  <br>
+                  <label for="plz">PLZ/Ort</label>
+                  <span id="pl">
+                        <input id="" type="number" placeholder="8800">
+                        <input id="" type="text" placeholder="Musterstadt">
+                  </span>
+                  <br>
+                  <br>
+                  <label for="Adresse">Kanton/Land</label>
+                  <span id="adre">
+                        <input id="" type="text" placeholder="ZH">
+                        <input id="" type="text" placeholder="Schweiz">
+                  </span>
+                  <br>
+                  <br>
+                  <input id="spe" type="submit" value="Speichern">
             </div>
-            <div class="mobil">
-                  <label class="mobile">mobile</label>
-                  <input type="mobile" name="mobile" id="mob">
-            </div>
-            <div class="mainnumbe">
-                  <label class="mainnumber">mainnumber</label>
-                  <input type="number" name="mainnumber" id="mai">
-            </div>
-            <div class="fa">
-                  <label class="fax">fax</label>
-                  <input type="fax" name="fax" id="fax1">
-            </div>
-            <div class="mail">
-                  <label class="mail1">mail1</label>
-                  <input type="mail" name="mail1" id="mail1">
-            </div>
-            <div class="mai2">
-                  <label class="mail2">mail2</label>
-                  <input type="mail" name="mail2" id="maill">
-            </div>
-      </div>
-      <hr>
-      <div class="address">
-            <h3>address data</h3>
-            <div class="firma1">
-                  <label class="firma">company</label>
-                  <input type="firma" name="firma" id="firm">
-            </div>
-            <div class="Additional / company">
-                  <label class="company">Additional / company</label>
-                  <input type="Additional / company" name="company" id="com">
-            </div>
-            <div class="homepage">
-                  <label class="mainnumber">homepage</label>
-                  <input type="text" name="homepager" id="home">
-            </div>
-            <div class="adress">
-                  <label for="adressh">adress/hous n </label>
-
-                  <input type="text" name="adress" id="adressh" type="number" placeholder />
-                  <input type="number" id="adr" placeholder />
-
-            </div>
-            <div class="mail">
-                  <label class="mail11">Post office </label>
-                  <input type="mail" name="mail1" id="mail11">
-            </div>
-            <div class="mail22">
-                  <label class="mail2">town/postecode</label>
-                  <input type="mail" name="mail2" id="mailll">
-                  <input type="number" id="ad" placeholder>
-            </div>
-      </div>
-
-      <button class="save" type="button">save</button>
-
+      </form>
 </body>
-
-</html>
